@@ -1,0 +1,203 @@
+body{
+    background-color: #f2f2f2;
+    background-image: url('../img/bg.jpg');
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: sans-serif;
+}
+
+/* 通用配置 */
+.row-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-content: flex-start;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+
+.col-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-content: stretch;
+    align-items: center;
+}
+
+.divbtn{
+    background: rgba(241, 245, 250,0.8);
+    border: none;
+    
+    width: 95%;
+    text-align: left;
+    margin-bottom: 10px;
+}
+.divbtn:hover{
+    background: rgba(215, 219, 228,0.8);
+    /* 鼠标经过时变为手形 */
+    cursor: pointer; 
+}
+.line{
+    height: 0px;
+    width: 80%;
+    margin: 10px auto;
+    border: 1px solid #232323;
+}
+
+/* 页面具体元素配置 */
+.divbtn span{
+    padding-left: 20px;
+    font-size: 30px;
+}
+.main{
+    width: 900px;
+    margin: 30px auto;
+    /* border: 1px solid #555555; */
+}
+.left{
+    width: 25%;
+    /* border: 1px solid #aaaaaa; */
+}
+
+.right{
+    width:73%;
+    /* border: 1px solid #aaaaaa; */
+    background: rgba(255, 255, 255, 0.8);
+    box-shadow: 1px 2px 2px 2px rgba(200, 200, 200, 0.5);
+}
+
+/* 简介页面 - 默认选项卡 */
+.me{
+    display: flex;
+    justify-content: space-around;  
+    flex-wrap: wrap;
+}
+.me .tx{
+    width: 100%;
+    margin-top: 40px;
+    text-align: center;
+    box-sizing: border-box;
+}
+.me .tx>img{
+    width: 30%;
+    border-radius: 50%;
+}
+.me .welcome{
+    font-size: 40px;
+    width:80%;
+    text-align: center;
+}
+.me .welcome .name{
+    font-size: 45px;
+    color: cornflowerblue;
+}
+.me .briefIntro{
+    font-size: 25px;
+    line-height: 50px;
+}
+
+/*项目经历*/
+.projects .title{ font-size: 25px;}
+.projects .brief{ font-size: 20px;}
+/* 联系方式选项卡 */
+.contact{
+    width: 90%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-content: space-around;
+}
+.contact .normal-contact{
+    width: 100%;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+}
+.contact ul{
+    list-style: none;
+}
+#wxqr{
+    /* 微信二维码 */
+    width:100px;
+    height:100px;
+}
+.contact li{
+    height: 30px;
+    line-height: 30px;
+}
+.normal-contact img{
+    /* 联系方式小图标与文字对齐 */
+    height: 80%;
+    vertical-align: middle;
+}
+
+/* 留言板选项卡 */
+.leave-message{
+    width:90%;
+}
+.sender span{
+    display: inline-block;
+    width: 5em;
+    text-align: right;
+    margin-right: 5px;
+}
+.sender input{
+    width: 300px;
+}
+.sender textarea{
+    display: inline-block;
+    width:300px;
+}
+#submitbtn{
+    width:90px;
+    height: 30px;
+    margin-top: 5px;
+}
+.messages{
+    width:100%;
+    flex-wrap: nowrap;
+    margin-top: 20px;
+}
+.messages .title{
+    width:100%;
+    text-align: left;
+    margin-bottom: 10px;
+}
+.message{
+    width:100%;
+    margin: 0 auto;
+    margin-bottom: 5px;
+    padding: 3px;
+    border: 1px solid #aaaaaa;
+    border-radius: 5px 5px;
+}
+.message .guestName{
+    width:30%;
+    float: left;
+    text-align: left;
+}
+.message .guestMail{
+    width:65%;
+    float: right;
+    text-align: left;
+    border-left: 1px solid #aaaaaa;
+
+}
+.message .messageText{
+    float: left;
+    width:100%;
+    height:auto;
+    text-align: left;
+    border-top: 1px solid #aaaaaa;
+    overflow: hidden;
+    white-space: initial;
+    word-wrap: break-word;
+    margin-top: 0px;
+}
+
+/* skills 选项卡 */
+.skills{
+    font-size: 25px;
+}
